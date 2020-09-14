@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Tạo form survey khách hàng</title>
+</head>
+<body>
+<form>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr>
+    <h5>What is your range?</h5>
+    <select name="age">
+        <option name="18">18-24</option>
+        <option name="25">24-34</option>
+        <option name="35">35-50</option>
+        <option name="51">50+</option>
+    </select>
+
+    <h5>What is your yearly income range</h5>
+    <select name="income">
+        <option value="0">$0-$25,000</option>
+        <option value="0">$25,001-$50,000</option>
+        <option value="0">$50,001-$100,000</option>
+        <option value="0">$100,000+</option>
+    </select>
+
+    <!--<h5>Gender indentity</h5>
+    <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="nonbinary">Nonbinary</option>
+        <option value="other">Other</option>
+    </select>-->
+    <h5>Gender identity</h5>
+    <label></label><input type="radio" name="gender" value="male"/>&nbsp;&nbsp;Male</label> <br/>
+    <label><input type="radio" name="gender" value="female"/>&nbsp;&nbsp;Female</label> <br/>
+    <label><input type="radio" name="gender" value="nonbinary"/>&nbsp;&nbsp;Nonbinary</label><br/>
+    <label><input type="radio" name="gender" value="other"/>&nbsp;&nbsp;Other<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="gender"/><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px">Maximum of <strong>250 </strong>characters.     <i>Currently used:</i><b> 0</b><i> characters</i></span>
+    </label><br/>
+
+    <h5>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h5>
+    <label><input type="checkbox" name="product" value="p1"/>&nbsp;&nbsp;Product 1</label> <br/>
+    <label><input type="checkbox" name="product" value="p2"/>&nbsp;&nbsp;Product 2</label> <br/>
+    <label><input type="checkbox" name="product" value="p3"/>&nbsp;&nbsp;Product 3</label> <br/>
+
+    <h5>How often would you use our new product?</h5>
+    <label><input type="checkbox" name="time" value="t1"/>&nbsp;&nbsp;Daily</label> <br/>
+    <label><input type="checkbox" name="time" value="t2"/>&nbsp;&nbsp;Weekly</label> <br/>
+    <label><input type="checkbox" name="time" value="t3"/>&nbsp;&nbsp;Monthly</label> <br/>
+
+    <h5>What would you pay for the new product?</h5>
+    <label>$</label><input type="text" name="dollar" value="dollar"/><label> . </label><input type="text" name="cent" value="cent"/>
+
+    <h5>What features would you like to see in the new products?</h5>
+    <textarea cols="50" rows="5"></textarea>
+
+    <p>Please rate your level of agreement with the following statements</p>
+    <table>
+        <tr>
+            <td></td>
+            <td>Strongly Disagree</td>
+            <td>Disagree</td>
+            <td>Agree</td>
+            <td>Strongly Disagree</td>
+
+        </tr>
+        <tr>
+            <td>Our products are priced fairly</td>
+            <td><input type="radio" name="luachon" value="a1"/><br/>1</td>
+            <td><input type="radio" name="luachon" value="a2"/><br/>2</td>
+            <td><input type="radio" name="luachon" value="a3"/><br/>3</td>
+            <td><input type="radio" name="luachon" value="a4"/><br/>4</td>
+
+        </tr>
+        <tr>
+            <td>Our products are high quality</td>
+            <td><input type="radio" name="luachon" value="b1"/><br/>1</td>
+            <td><input type="radio" name="luachon" value="b2"/><br/>2</td>
+            <td><input type="radio" name="luachon" value="b3"/><br/>3</td>
+            <td><input type="radio" name="luachon" value="b4"/><br/>4</td>
+
+        </tr>
+        <tr>
+            <td>You would recommend our product to a friend or coworker</td>
+            <td><input type="radio" name="luachon" value="c1"/><br/>1</td>
+            <td><input type="radio" name="luachon" value="c2"/><br/>2</td>
+            <td><input type="radio" name="luachon" value="c3"/><br/>3</td>
+            <td><input type="radio" name="luachon" value="c4"/><br/>4</td>
+
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input type="submit" value="Submit" name="submit"/>
+            </td>
+
+        </tr>
+    </table>
+    <style>
+        tr,td{
+            border: solid 1px;
+            text-align: center;
+        }
+        tr{
+            width:60px;
+            height:30px;
+        }
+
+        tomau{
+            background-color: aquamarine;
+        }
+    </style>
+</form>
+</body>
+</html>
